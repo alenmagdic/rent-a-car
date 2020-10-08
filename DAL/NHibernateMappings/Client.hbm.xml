@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Model" namespace="Model">
+  <class name="Model.Client, Model" lazy="false" table="Client">
+    <id name="Id" column="Id">
+      <generator class="native"/>
+    </id>
+    <property name="Name" column="Name"/>
+    <property name="ClientType" column="ClientType"/>
+    <property name="OIB" column="OIB"/>
+    <property name="Email" column="Email"/>
+    <property name="PhoneNumber" column="PhoneNumber"/>
+
+  </class>
+</hibernate-mapping>

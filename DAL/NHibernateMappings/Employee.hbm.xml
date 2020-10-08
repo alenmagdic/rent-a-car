@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Model" namespace="Model">
+  <class name="Model.Employee, Model" lazy="false" table="Employee">
+    <id name="Id" column="Id">
+      <generator class="native"/>
+    </id>
+    <property name="Username" column="Username"/>
+    <property name="Password" column="Password"/>
+    <property name="EmployeeType" column="EmployeeType"/>
+    <property name="OIB" column="OIB"/>
+    <property name="FirstName" column="FirstName"/>
+    <property name="LastName" column="LastName"/>
+    
+  </class>
+</hibernate-mapping>

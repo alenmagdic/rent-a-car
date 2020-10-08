@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Model" namespace="Model">
+  <class name="Model.VehicleBrand, Model" lazy="false" table="VehicleBrand">
+    <id name="Id" column="Id">
+      <generator class="native"/>
+    </id>
+
+    <property name="BrandName" column="BrandName"/>
+    
+  </class>
+</hibernate-mapping>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Model" namespace="Model">
+  <class name="Model.Reservation, Model" lazy="false" table="Reservation">
+    <id name="Id" column="Id">
+      <generator class="native"/>
+    </id>
+
+    <property name="StartDate" column="StartDate"/>
+    <property name="EndDate" column="EndDate"/>
+    <many-to-one name="ReservationClient" class="Model.Client, Model" column="ReservationClient"/>
+    <many-to-one name="ReservedVehicle" class="Model.Vehicle, Model" column="ReservedVehicle"/>
+    <many-to-one name="Employee" class="Model.Employee, Model" column="Employee"/>
+
+
+  </class>
+</hibernate-mapping>
